@@ -5,6 +5,8 @@ import Header from "./Header";
 //components
 import Home from "./Home";
 import About from "./About";
+import Teachers from "./Teachers";
+import Courses from "./Courses";
 
 const App = () => (
   <BrowserRouter>
@@ -12,6 +14,8 @@ const App = () => (
       <Header />
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/teachers" component={Teachers} />
+      <Route path="/courses" component={Courses} />
     </div>
   </BrowserRouter>
 );
